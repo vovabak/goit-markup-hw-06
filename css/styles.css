@@ -1,0 +1,155 @@
+:root {
+    --black-color: #212121;
+    --white-color: #FFFFFF;
+    --gray-color: #757575;
+    --blue-color: #2196F3;
+    --blue-background: #2196F3;
+    --gray-background: #F5F4FA;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;    
+    letter-spacing: 0.03em;
+    color: var(--gray-color)    
+}
+.logo {
+    font-family: Raleway, sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+
+.logo.black {
+    color: #000000;
+}
+
+.logo.white {
+    color: #FFFFFF;
+}
+
+.logo span {
+    color: #2196F3;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--black-color);
+    text-decoration: none;    
+}
+
+.contacts {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--gray-color);
+    text-decoration: none;
+}
+
+.hero {
+    background-color: #2F303A;
+}
+
+.hero>h1 {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--white-color);
+}
+
+.hero .button {
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: var(--white-color);
+    background-color: var(--blue-background);
+}
+
+.button {
+    cursor: pointer;
+}
+
+.adventages h3 {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--black-color);
+}
+
+.about-us>h2 {    
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color: var(--black-color);
+}
+
+.team>h2 {    
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color: var(--black-color);
+}
+
+.team h3 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--black-color);
+}
+
+.team p {
+    font-size: 16px;
+    line-height: 1.19
+    letter-spacing: 0.03em;
+    color: var(--gray-color);
+}
+
+.contacts.location {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--white-color);
+}
+
+.contacts.mail, .contacts.phone {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+footer {
+    background: #2F303A;
+}
+
+.link:hover,
+.contacts:hover {
+    color: var(--blue-color);
+}
+
+.link:focus,
+.contacts:focus {
+    color: var(--blue-color);
+}
