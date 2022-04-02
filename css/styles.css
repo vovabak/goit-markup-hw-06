@@ -36,6 +36,10 @@ body {
     color: #2196F3;
 }
 
+.link.current {
+    color: var(--blue-color);
+}
+
 .list {
     list-style: none;
 }
@@ -79,6 +83,16 @@ body {
     letter-spacing: 0.06em;
     color: var(--white-color);
     background-color: var(--blue-background);
+}
+
+.filter .button {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62
+    letter-spacing: 0.03em;
+    color: var(--black-color);
 }
 
 .button {
@@ -152,4 +166,28 @@ footer {
 .link:focus,
 .contacts:focus {
     color: var(--blue-color);
+}
+
+.filter .button:hover {
+    color: var(--white-color);
+    background: var(--blue-background)
+}
+
+.filter .button:focus {
+    color: var(--white-color);
+    background: var(--blue-background)
+}
+
+.portfolio h2 {
+    font-size: 18px;
+    line-height: 2 letter-spacing: 0.06em;
+    color: var(--black-color);
+}
+
+.portfolio p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: var(--gray-color);
 }
