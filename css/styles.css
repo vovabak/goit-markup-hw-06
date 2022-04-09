@@ -355,7 +355,9 @@ footer {
 }
 
 .text-item {
-    padding: 20px 24px;    
+    padding: 20px 24px;
+    min-width: 370px;
+    border: 1px solid #EEEEEE;   
 }
 
 .text-item h2 {
