@@ -16,28 +16,38 @@ body {
     color: var(--gray-color)    
 }
 
-.container {
-    display: flex;
-    align-items: center;
-        
-    width: 1170px;
-    padding: 0 15px;
-    /* background-color: red; */
+h1, h2, h3 {
+    margin: 0;
 }
 
+.page-header {
+    border-bottom: 1px solid #ECECEC;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 1170px;
+    padding: 0 15px;    
+}
+
+.box {
+    display: flex;
+    align-items: center;
+}
 .list {
     list-style: none;
     margin: 0;
     padding: 0;
-    }
+}
 
 .nav-box .list {
     display: flex;    
 }
 
 .nav-box .item:not(:last-child) {
-    margin-right: 50px;
-    /* background-color: aqua;     */
+    margin-right: 50px;    
 }
 
 .nav-box a {
@@ -107,10 +117,13 @@ body {
 }
 
 .hero {
+    text-align: center;
     background-color: #2F303A;
 }
 
 .hero>h1 {
+    margin-top: 199px;
+
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -120,13 +133,30 @@ body {
 }
 
 .hero .button {
+    margin-top: 30px;
+    margin-bottom: 200px;
+    padding: 10px 32px;
+    border-radius: 4px;
+    border: transparent;
+    min-width: 200px;
+
     font-family: Roboto, sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.06em;    
     color: var(--white-color);
     background-color: var(--blue-background);
+}
+
+.hero .button:hover {
+        color:var(--blue-background);
+        background-color:var(--white-color);
+}
+
+.hero .button:focus {
+    color: var(--blue-background);
+    background-color: var(--white-color);
 }
 
 .portfolio .button {
@@ -143,6 +173,10 @@ body {
     cursor: pointer;
 }
 
+.adventages h2 {
+    visibility: hidden;
+}
+
 .adventages h3 {
     font-size: 14px;
     line-height: 1.14;
@@ -155,10 +189,35 @@ body {
     line-height: 1.71;
 }
 
-.about-us>h2, .team>h2 {    
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;   
+}
+
+.adventages .list, .about-us .list, .team .list {
+    display: flex;    
+}
+
+.adventages .item:not(:last-child),
+.about-us .item:not(:last-child),
+.team .item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.item-team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.about-us>h2, .team>h2 {
+    margin-bottom: 50px;
+    
     font-size: 36px;
     line-height: 1.16;
     letter-spacing: 0.03em;
+    text-align: center;
     color: var(--black-color);
 }
 

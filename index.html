@@ -10,12 +10,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="css/styles.css">
     
 </head>
 <body>
-    <header>
-        <div class="container">
+    <header class="page-header">
+        <div class="container box">
             <a href="#" class="logo black"><span>Web</span>Studio</a>
             <nav class="nav-box">
                 <ul class="list">
@@ -32,77 +34,98 @@
     </header>
     <main>
         <!--Герой-->
-        <section class="hero">
-            <h1>Эффективные решения<br>для вашего бизнеса</h1>
-            <button type="button" class="button">Заказать услугу</button>
+        <section>
+            <div class="container hero">
+                <h1>Эффективные решения<br>для вашего бизнеса</h1>
+                <button type="button" class="button">Заказать услугу</button>
+            </div>
+            
         </section>
         <!--Особливості-->
-        <section class="adventages">
-            <h2 hidden>Наши особенности</h2>
-            <ul class="list">
-                <li>
-                    <h3>Внимание к деталям</h3>
-                    <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
-                </li>
-                <li>
-                    <h3>Пунктуальность</h3>
-                    <p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
-                </li>
-                <li>
-                    <h3>Планирование</h3>
-                    <p>Равным образом консультация с широким активом в значительной степени обуславливает.</p>
-                </li>
-                <li>
-                    <h3>Современные технологии</h3>
-                    <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
-                </li>
-            </ul>
+        <section class="section">
+            <div class="container adventages">
+                <h2 hidden>Наши особенности</h2>
+                <ul class="list">
+                    <li class="item">
+                        <h3>Внимание к деталям</h3>
+                        <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+                    </li>
+                    <li class="item">
+                        <h3>Пунктуальность</h3>
+                        <p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+                    </li>
+                    <li class="item">
+                        <h3>Планирование</h3>
+                        <p>Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+                    </li>
+                    <li class="item">
+                        <h3>Современные технологии</h3>
+                        <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                    </li>
+                </ul>
+            </div>
+            
         </section>
         <!--Чим ми займаємося-->
-        <section class="about-us">
-            <h2>Чем мы занимаемся</h2>
-            <ul class="list">
-                <li><img src="images/img1.jpg" width="370" height="294" alt="Робота за комп’ютером"></li>
-                <li><img src="images/img2.jpg" width="370" height="294" alt="Робота зі смартфону"></li>
-                <li><img src="images/img3.jpg" width="370" height="294" alt="Робота на планшеті"></li>
-            </ul>
+        <section class="section">
+            <div class="container about-us">
+                <h2>Чем мы занимаемся</h2>
+                <ul class="list">
+                    <li class="item"><img src="images/img1.jpg" width="370" height="294" alt="Робота за комп’ютером"></li>
+                    <li class="item"><img src="images/img2.jpg" width="370" height="294" alt="Робота зі смартфону"></li>
+                    <li class="item"><img src="images/img3.jpg" width="370" height="294" alt="Робота на планшеті"></li>
+                </ul>
+            </div>
+            
         </section>
         <!--Наша команда-->
-        <section class="team">
-            <h2>Наша команда</h2>
-            <ul class="list">
-                <li>
-                    <img src="images/photo1.jpg" width="270" height="260" alt="Фото: Игорь Демьяненко">
-                    <h3>Игорь Демьяненко</h3>
-                    <p>Product Designer</p>
-                </li>
-                <li>
-                    <img src="images/photo2.jpg" width="270" height="260" alt="Фото: Ольга Репина">
-                    <h3>Ольга Репина</h3>
-                    <p>Frontend Developer</p>
-                </li>
-                <li>
-                    <img src="images/photo3.jpg" width="270" height="260" alt="Фото: Николай Тарасов">
-                    <h3>Николай Тарасов</h3>
-                    <p>Marketing</p>
-                </li>
-                <li>
-                    <img src="images/photo4.jpg" width="270" height="260" alt="Фото: Михаил Ермаков">
-                    <h3>Михаил Ермаков</h3>
-                    <p>UI Designer</p>
-                </li>
-            </ul>
+        <section class="section">
+            <div class="container team">
+                <h2>Наша команда</h2>
+                <ul class="list">
+                    <li class="item">
+                        <img src="images/photo1.jpg" width="270" height="260" alt="Фото: Игорь Демьяненко">
+                        <div class="item-team">
+                            <h3>Игорь Демьяненко</h3>
+                            <p>Product Designer</p>
+                        </div>                        
+                    </li>
+                    <li class="item">
+                        <img src="images/photo2.jpg" width="270" height="260" alt="Фото: Ольга Репина">
+                        <div class="item-team">
+                            <h3>Ольга Репина</h3>
+                            <p>Frontend Developer</p>
+                        </div>                        
+                    </li>
+                    <li class="item">
+                        <img src="images/photo3.jpg" width="270" height="260" alt="Фото: Николай Тарасов">
+                        <div class="item-team">
+                            <h3>Николай Тарасов</h3>
+                            <p>Marketing</p>
+                        </div>                        
+                    </li>
+                    <li class="item">
+                        <img src="images/photo4.jpg" width="270" height="260" alt="Фото: Михаил Ермаков">
+                        <div class="item-team">
+                            <h3>Михаил Ермаков</h3>
+                            <p>UI Designer</p>
+                        </div>                        
+                    </li>
+                </ul>
+            </div>            
         </section>
     </main>
     <footer>
-        <a href="#" class="logo white"><span>Web</span>Studio</a>
-        <address>
-            <ul class="list">
-                <li><a href="#" class="contacts location">г. Киев, пр-т Леси Украинки, 26</a></li>
-                <li><a href="mailto:info@example.com" class="contacts mail">info@example.com</a></li>
-                <li><a href="tel:+380991111111" class="contacts phone">+38 099 111 11 11</a></li>
-            </ul>
-        </address>
+        <div class="container">
+            <a href="#" class="logo white"><span>Web</span>Studio</a>
+            <address>
+                <ul class="list">
+                    <li><a href="#" class="contacts location">г. Киев, пр-т Леси Украинки, 26</a></li>
+                    <li><a href="mailto:info@example.com" class="contacts mail">info@example.com</a></li>
+                    <li><a href="tel:+380991111111" class="contacts phone">+38 099 111 11 11</a></li>
+                </ul>
+            </address>
+        </div>        
     </footer>    
 </body>
 </html>
