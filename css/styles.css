@@ -16,6 +16,19 @@ body {
     color: var(--gray-color)    
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 h1, h2, h3, p {
     margin: 0;
 }
@@ -67,7 +80,8 @@ img {
     padding-bottom: 32px;
 }
 
-.nav-contacts {    
+.nav-contacts {
+    display: flex;
     margin-left: auto;    
 }
 
@@ -78,6 +92,29 @@ img {
 
 .nav-contacts a:not(:last-child) {
     margin-right: 50px;    
+}
+
+.nav-contacts .contacts {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    display: block;
+    margin-right: 10px;
+    padding: 0;
+    border: 0;
+    fill: currentColor;
+}
+
+.icon.envelope {
+    width: 16px;
+    height: 12px;
+}
+
+.icon.smartphone {
+    width: 10px;
+    height: 16px;
 }
 
 .logo {
@@ -196,11 +233,6 @@ img {
 
 .adventages.section {
     padding-bottom: 0;
-}
-
-.adventages h2,
-.portfolio h1 {
-    visibility: hidden;
 }
 
 .adventages h3 {
