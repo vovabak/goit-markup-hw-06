@@ -2,8 +2,7 @@
     --black-color: #212121;
     --white-color: #FFFFFF;
     --gray-color: #757575;
-    --blue-color: #2196F3;
-    --blue-background: #2196F3;
+    --accent-color: #2196F3;
     --gray-background: #F5F4FA;
 }
 
@@ -33,7 +32,7 @@ h1, h2, h3, p {
     margin: 0;
 }
 
-ul {
+.list {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -67,7 +66,7 @@ img {
 .adventages .list,
 .about-us .list,
 .team .list,
-.portfolio .list {
+.portfolio .list, .clients .list {
     display: flex;    
 }
 
@@ -96,25 +95,15 @@ img {
 
 .nav-contacts .contacts {
     display: flex;
-    align-items: center;
+    align-items: center;    
+}
+
+.contacts .icon {
+    margin-right: 10px;    
 }
 
 .icon {
-    display: block;
-    margin-right: 10px;
-    padding: 0;
-    border: 0;
     fill: currentColor;
-}
-
-.icon.envelope {
-    width: 16px;
-    height: 12px;
-}
-
-.icon.smartphone {
-    width: 10px;
-    height: 16px;
 }
 
 .logo {
@@ -147,7 +136,7 @@ img {
 }
 
 .link.current {
-    color: var(--blue-color);
+    color: var(--accent-color);
 }
 
 .link {
@@ -170,9 +159,11 @@ img {
 
 .hero {    
     padding: 200px 0;
-    text-align: center;
+    text-align: center;    
 
-    background-color: #2F303A;
+    background-image: url("../images/background-image.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .hero h1 {
@@ -198,16 +189,16 @@ img {
     line-height: 1.88;
     letter-spacing: 0.06em;    
     color: var(--white-color);
-    background-color: var(--blue-background);
+    background-color: var(--accent-color);
 }
 
 .hero .button:hover {
-        color:var(--blue-background);
+        color:var(--accent-color);
         background-color:var(--white-color);
 }
 
 .hero .button:focus {
-    color: var(--blue-background);
+    color: var(--accent-color);
     background-color: var(--white-color);
 }
 
@@ -231,10 +222,6 @@ img {
     padding-bottom: 94px;
 }
 
-.adventages.section {
-    padding-bottom: 0;
-}
-
 .adventages h3 {
     margin-bottom: 10px;
 
@@ -247,6 +234,18 @@ img {
 
 .adventages p {
     line-height: 1.71;
+}
+
+.thumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;    
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+
+    background-color: #F5F4FA;
 }
 
 .adventages .item {
@@ -262,10 +261,14 @@ img {
 .team .item {
     display: flex;
     flex-direction: column;
-    align-items: center;    
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 2px 1px 0,
+    rgba(0, 0, 0, 0.14) 0 1px 1px 0,
+    rgba(0, 0, 0, 0.12) 0 1px 3px 0;
+    border-radius: 0px 0px 4px 4px;
 }
 
-.about-us h2, .team h2 {
+.about-us h2, .team h2, .clients h2 {
     margin-bottom: 50px;
     
     font-size: 36px;
@@ -287,7 +290,7 @@ img {
 }
 
 .team p {
-    margin-bottom: 30px;
+    margin-bottom: 16px;
 
     font-size: 16px;
     line-height: 1.19;
@@ -295,9 +298,95 @@ img {
     color: var(--gray-color);
 }
 
+.socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+        
+    color: #AFB1B8;
+}
+
+.socials:hover, .socials:focus {
+    color: var(--white-color);
+    background-color: var(--accent-color)
+}
+
+.socials-items:not(:last-child) {
+    margin-right: 10px;
+}
+
+.clients-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid;
+    border-radius: 4px;
+
+    color: #AFB1B8;    
+}
+
+.clients-item:hover, clients-item:focus {
+    color: var(--accent-color);
+}
+
+.clients-list:not(:last-child) {
+    margin-right: 30px;
+}
+
 .page-footer {
     padding: 60px 0;
-    background: #2F303A;
+    background-color: #2F303A;
+}
+
+.page-footer .socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    color: var(--white-color);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.page-footer .socials:hover,
+.page-footer .socials:focus {
+    background-color: var(--accent-color);
+}
+
+.footer-address {
+    width: 231px;
+}
+
+.footer-socials {
+    margin-left: 70px;
+}
+
+.footer-socials .list {
+    display: flex;    
+}
+
+.footer {
+    display: flex;
+}
+
+.page-footer h2 {
+    margin-top: 12px;
+
+    font-size: 14px;
+    line-height: 1.14;    
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    
+    color: var(--white-color);
 }
 
 .item-address:not(:last-child) {
@@ -324,22 +413,28 @@ img {
 
 .link:hover,
 .contacts:hover {
-    color: var(--blue-color);
+    color: var(--accent-color);
 }
 
 .link:focus,
 .contacts:focus {
-    color: var(--blue-color);
+    color: var(--accent-color);
 }
 
-.portfolio .button:hover {
-    color: var(--white-color);
-    background: var(--blue-background);
-}
-
+.portfolio .button:hover,
 .portfolio .button:focus {
     color: var(--white-color);
-    background: var(--blue-background);
+    background: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.works .link:hover,
+.works .link:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .works h2 {
@@ -359,7 +454,7 @@ img {
     color: var(--gray-color);
 }
 
-.portfolio .list {
+.portfolio .list, .team .list, .clients .list  {
     justify-content: center;
 }
 
