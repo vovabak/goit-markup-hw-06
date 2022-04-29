@@ -378,15 +378,57 @@
                     </li>
                 </ul>
             </div>
-            </div>            
-            
+            </div>
+            <form name="signup-form">
+                <b>Подпишитесь на рассылку</b>
+                <label class="form-field">
+                    <input type="email">
+                </label>
+                <button>Подписаться
+                    <svg class="icon" width="24px" height="24px">
+                        <use href="./images/icons.svg#icon-send"></use>
+                    </svg>
+                </button>
+            </form>
         </div>        
     </footer>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="button" data-modal-close>
-                <img src="./images/close-black-18dp.svg"  class="icon" alt="close">
+                <svg class="icon" width="18px" height="18px">
+                    <use href="./images/icons.svg#close"></use>
+                </svg>                
             </button>
+            <form name="client-form">
+                <b>Оставьте свои данные, мы вам перезвоним</b>
+                <label class="form-field">Имя
+                    <svg class="icon" width="18px" height="18px">
+                        <use href="./images/icons.svg#person-black"></use>
+                    </svg>
+                    <input type="text" name="client-name" autocomplete="off">
+                </label>
+                <label class="form-field">Телефон
+                    <svg class="icon" width="18px" height="18px">
+                        <use href="./images/icons.svg#phone-black"></use>
+                    </svg>
+                    <input type="tel" name="client-tel" autocomplete="off">
+                </label>
+                <label class="form-field">Почта
+                    <svg class="icon" width="18px" height="18px">
+                        <use href="./images/icons.svg#email-black"></use>
+                    </svg>
+                    <input type="email" name="client-email" autocomplete="off">
+                </label>
+                <label class="form-field">
+                    Комментарий
+                    <textarea name="client-comments" placeholder="Введите текст"></textarea>
+                </label>
+                <label>
+                    <input type="checkbox">
+                    Соглашаюсь с рассылкой и принимаю Условия договора
+                </label>
+                <button type="submit">Отправить</button>
+            </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>
